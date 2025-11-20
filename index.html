@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- unicons but we'll use boxiicons-->
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+    <!--  style.css-->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Portfolio Website</title>
+
+    </head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">J<span>o</span>ch</a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="#home"      class="nav__link active-link">Home</a></li>
+                <li><a href="#about" class="nav__link">Education</a></li>
+                <li><a href="#services"     class="nav__link">Achievements</a></li>
+                <li><a href="#contact"   class="nav__link">Contact</a></li> 
+
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="ui uil-times"></i>
+
+
+            </div>
+           </div>
+
+           <!-- add href link for teleport yes sir-->
+           <div class="nav__socials">
+            <a class="nav__social-link" >
+                <i class='bxl  bx-facebook'    ></i> 
+            </a>
+            <a  class="nav__social-link" >
+                <i class='bxl  bx-instagram'    ></i> 
+            </a>
+            <a class="nav__social-link" >
+                <i class='bxl  bx-github'    ></i> 
+            </a>    
+            <a class="nav__social-link" >
+                <i class='bxl  bx-discord-alt'    ></i> 
+            </a>
+            <div class="nav__btns">
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ui uil-bars"></i>
+
+            </div>
+
+           </div>
+        </nav>
+    </header>    
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+        <div class="home__content">
+            <h1 class="home__title"> Hi, I'm <span>Jochrisse Aspilan</span></h1>
+            <span class="home__subtitle">Introduction</span>
+            <h2 class="about__me">I am a full blooded Igorot, I was born and raised in Bontoc Mountain Province, and I'm currently studying here at UC pursuing a Bachelor of Computer Science.</h2>
+        </div>
+        <img src="jochrisse2.jpg" alt="portfoliopic" class="home__img"/>
+
+        </div>
+       </section>
+      <!--=============== ABOUT ===============-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+            <img src="jochrisse2.jpg" alt="" class="about__img"/>
+          
+            <div class="about__content">
+                <h2 class="section__title">Education & Certification</h2>
+
+                <!-- REMOVED EXTRA
+                <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                -->
+
+
+                <div class="tabs__btns">
+                    <span class="tabs__btn tab__active" data-target="#education">Education </span>
+                    <span class="tabs__btn " data-target="#awards">Awards</span>
+ 
+
+                    <!-- REMOVED FROM BUTTONS-->
+ 
+                   <!-- 
+                    <span class="tabs__btn"data-target="#experience">Experience</span>
+                    <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span> 
+                    
+                    -->
+                    
+                    
+                    
+                </div>
+
+                <div class="tabs__content">
+
+                    <!-- if you want new tabs just copy and paste-->
+
+                    <!-- tab 4-->
+                    <div class="tabs__item tab__active" data-content id="education">
+                        <div class="tabs__data grid">
+                            
+                            <!-- this one p is equal to 1 description and title span = title-->
+
+                            <!--College-->
+        <div class="edu-item">
+            <img src="uc-logo.png" alt="uc-logo" class="edu-logo">
+            <p class="tabs__description">
+                <span>University of the Cordilleras</span> - College (Current)
+                <span>Baguio City, Benguet</span>
+            </p>
+        </div>
+
+                            <!--Sen High-->
+                        <div class="edu-item">
+                            <img src="saint-vincent.png" alt="uc-logo" class="edu-logo">
+                            <p class="tabs__description">
+                                <span>Saint Vincent School </span>- Senior Highschool (2023-2025)
+                                <span>Bontoc, Mountain Province</span>
+                            </p>
+                            </div>
+
+                            <!--Jun High-->
+                            <div class="edu-item">
+                            <img src="saint-vincent.png" alt="uc-logo" class="edu-logo">
+                            <p class="tabs__description">
+                                <span>Saint Vincent School </span>- Junior Highschool (2019-2023)
+                                <span>Bontoc, Mountain Province</span>
+                            </p>
+                            </div>
+
+                            <!--Elementary-->
+                            <div class="edu-item">
+                            <img src="saint-vincent.png" alt="uc-logo" class="edu-logo">
+                            <p class="tabs__description">
+                                <span>Saint Vincent School </span>- Elementary (2013-2019)
+                                <span>Bontoc, Mountain Province</span>
+                            </p>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <!-- tab 2-->
+                    <div class="tabs__item" data-content id="awards">
+                        <div class="tabs__data grid">
+
+                            <div class="edu-item">
+                            <img src="saint-vincent.png" alt="uc-logo" class="edu-logo">
+                            <p class="tabs__description">
+                                <span>Saint Vincent School </span> - With Honors (2013-2019)
+                                <span>Bontoc, Mountain Province</span>
+                            </p>                
+                            </div>            
+                        </div>
+                    </div>
+
+                    
+                    <!-- tab 1-->
+                    <div class="tabs__item " data-content id="skills">
+                        <div class="tabs__data grid">
+                            
+                            <!-- this one p is equal to 1 description and title span = title-->
+                            <p class="tabs__description">
+                                <span>User experience design </span> -UI/UX
+                                <span>Delight the user and make it workto make it work</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- tab 3-->
+                    <div class="tabs__item" data-content id="experience">
+                        <div class="tabs__data grid">
+                            
+                            <!-- this one p is equal to 1 description and title span = title-->
+                            <p class="tabs__description">
+                                <span>Experience </span> -UI/UX
+                                <span>Delight the user and make it workto make it work</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+           </div>
+
+
+
+
+      </section>
+
+      <!--=============== SERVICES ===============-->
+      <section class="services section" id="services">
+    <h2 class="section__title">Achievements & Activities</h2>
+
+    <!-- ACHIEVEMENTS -->
+    <h3 class="subsection__title">Achievements</h3>
+    <div class="services__container container grid">
+
+
+                <!-- one item-->
+        <div class="services__item">
+            
+            <h3 class="services__title">Basic Life Support Certificate</h3>
+            <p class="services__description"></p>
+            <p class="services__description">2025</p>
+        </div>
+
+        <!-- one item-->
+        <div class="services__item">
+            
+            <h3 class="services__title">Youth Leadership Summit Certificate</h3>
+            <p class="services__description"></p>
+            <p class="services__description">2019</p>
+        </div>
+
+
+    </div>
+
+
+    <!-- EXTRA CURRICULAR -->
+    <h3 class="subsection__title">Extra-Curricular Activities</h3>
+    <div class="services__container container grid">
+
+        <!-- one item-->
+        <div class="services__item">
+            <h3 class="services__title">Arnis and Taekwondo</h3>
+            <p class="services__description">Practitioner</p>
+            <p class="services__description">2017-2019</p>
+        </div>
+
+                <!-- one item-->
+        <div class="services__item">
+            
+            <h3 class="services__title">Bontoc Loan Tennis Tournament</h3>
+            <p class="services__description">Silver Medal</p>
+            <p class="services__description">2019</p>
+        </div>
+
+        <!-- one item-->
+        <div class="services__item">
+            
+            <h3 class="services__title">Bontoc Arm Wrestling</h3>
+            <p class="services__description">1st Runner Up</p>
+            <p class="services__description">2023</p>
+        </div>
+
+        <!-- one item-->
+        <div class="services__item">
+            
+            <h3 class="services__title">Provincial Meet: Volleyball</h3>
+            
+            <p class="services__description">1st Runner Up</p>
+            <p class="services__description">2019</p>
+        </div>
+
+
+
+    </div>
+</section>
+    
+      <!--=============== PORTFOLIO ===============-->
+      <section class="portfolio section" id="portfolio"></section>
+
+      <!--=============== CONTACT ===============-->
+      <section class="contact section" id="contact"></section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer"></footer>
+
+    <!--=============== SCROLL UP ===============-->
+
+    <!--=============== EMAIL JS ===============-->
+    <script src=""></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+  </body>
+</html>
