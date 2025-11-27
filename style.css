@@ -579,13 +579,17 @@ input {
     background-color: var(--first-color);
     color: white;
     border: none;
-    padding: 1rem 1.2rem;
+    padding: .5rem .7rem;
     border-radius: 0.5rem;
-    font-size: 2rem;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     transition: transform 0.2s;
+}
+
+.nav-btn .label {
+    font-size: 1rem; /* adjust size as needed */
 }
 
 .nav-btn:hover {
