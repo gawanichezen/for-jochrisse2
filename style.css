@@ -125,7 +125,10 @@ input {
 
 .section {
     padding-block: 4rem;
-
+    min-height: 100vh;        /* ⬅ ALWAYS fill the full screen */
+    display: flex;            /* center content vertically */
+    flex-direction: column;
+    justify-content: center;  /* center content vertically */
 }
 
 .section__title {
@@ -491,38 +494,74 @@ input {
 
 /*=============== CONTACT ===============*/
 
+/* Fix Contact section spacing */
+.contact {
+    padding-top: 9rem !important; /* pushes title down */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* title stays at top but visible */
+    margin-top: -3rem;
+}
+
 
 .contact__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 4rem;
+    grid-template-columns: 0.8fr 0.8fr 1.4fr;
+    gap: 1rem;
+    margin-top: -2.5rem;
 }
 
 .contact__item {
     background-color: var(--container-color);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: var(--radius);
     text-align: center;
 }
 
 .contact__img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: var(--radius);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
 }
 
 .contact__title {
     font-size: var(--h3-font-size);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0rem;
 }
 
 .contact__description {
-    font-size: var(--small-font-size);
+    font-size: .8rem;
     color: var(--text-color);
+    text-align: justify;
 }
+
+
+/* Make the 3rd column a vertical stack (2 rows) */
+.contact__column-3 {
+    display: grid;
+    grid-template-rows: auto auto; /* two rows */
+    gap: 1rem;
+}
+
+
+/* Second row: two columns */
+.contact__row2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Optional: make the small items look nicer */
+.contact__item.small .contact__img {
+    height: 150px; /* smaller pictures */
+}
+
+.small-img .contact__img {
+    height: 150px; /* choose your height */
+}
+
 /*=============== FOOTER ===============*/
 
 /*=============== SCROLL UP ===============*/
@@ -588,4 +627,9 @@ input {
     .contact__container {
         grid-template-columns: 1fr;
     }
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* disables scrolling */
 }
