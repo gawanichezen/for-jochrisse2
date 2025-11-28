@@ -532,6 +532,7 @@ input {
     margin-bottom: 0rem;
 }
 
+
 .contact__description {
     font-size: .8rem;
     color: var(--text-color);
@@ -575,6 +576,14 @@ input {
     text-align: center;   /* center horizontally */
     margin-bottom: 1rem;  /* space below title */
     margin-top: 5rem;
+}
+
+.section__titlebatch2 {
+    font-size: 1rem;
+    text-align:center;
+    color: darkgreen;
+    margin-top: -1rem;
+    margin-bottom: ;
 }
 
 .batchmates__list ul {
