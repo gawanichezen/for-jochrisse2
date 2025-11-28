@@ -441,7 +441,7 @@ input {
 /*=============== SERVICES ===============*/
 
 .section__title {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -501,7 +501,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* title stays at top but visible */
-    margin-top: -3rem;
+    margin-top: -4rem;
 }
 
 
@@ -566,12 +566,12 @@ input {
 .batchmates__container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     align-items: start;
 }
 
 .section__titlebatch {
-    font-size: 3rem;
+    font-size: 2.6rem;
     text-align: center;   /* center horizontally */
     margin-bottom: 1rem;  /* space below title */
     margin-top: 5rem;
@@ -583,6 +583,7 @@ input {
     padding: 0;
     margin: 0;
     line-height: 1.6;
+    font-size: .9rem;
 }
 
 .batchmates__title {
@@ -591,9 +592,9 @@ input {
 }
 
 .batchmates__img {
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
     border-radius: var(--radius);
     background-color: #ddd; /* placeholder */
