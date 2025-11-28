@@ -31,7 +31,7 @@ navLinks.forEach(link => {
 /*==================== SHOW SCROLL UP ====================*/
 
 // SECTION ORDER
-const sections = ["home", "about", "services", "contact"];
+const sections = ["home", "about", "services", "contact", "batchmates"];
 let currentIndex = 0;
 
 // BUTTONS
